@@ -18,7 +18,10 @@ node {
 	        },
 	        'integration': {
 	            sh "echo 'shell scripts to run integration tests...'"
-	        }
+	        },
+		'simpletest': {
+		    sh "echo 'shell runs simple test...'"	
+		}
         }
       	stage ('Deploy') {
             sh "echo 'shell scripts to deploy to server...'"
